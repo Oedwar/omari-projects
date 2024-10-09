@@ -10,7 +10,7 @@
             font-family: Garamond, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('mha_background.jpg');
+            background-image: url ('MHA-Season-6.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -174,9 +174,10 @@
 
     <!-- Home Section -->
     <section id="home">
-        <h1>Welcome to my Webpage!!!</h1>
-        <p>This is my homepage. I have enjoyed this class a lot. I have always wondered what it would be like to create a website and now I finally have.</p>
-        <button id="learnMoreBtn">Learn More About Me!</button>
+        <h1>WELCOME TO MY WEBPAGE!!!</h1>
+       	   <p>This is my homepage. I have enjoyed this class a lot. I have always wondered what it would be like to create a website and now I finally have.</p>
+       
+	   <button id="learnMoreBtn">Learn More About Me!</button>
         <div id="moreInfo" style="display: none;">
             <p>I have been coding since the age of 15 and have never stopped. I started off with block coding and then I made a game on Roblox that helped me in a technology competition that took me to state. Ever since then, I have continuously improved my coding skills. I am now a junior in college and cannot wait to see what else there is I could learn.</p>
         </div>
