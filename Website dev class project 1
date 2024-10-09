@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage!!!</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Garamond, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #986;
+            color: #777;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 100vh; /* Each section takes full screen */
+        }
+
+        .hero-image, .ua-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Boxed headers */
+        h1, h2 {
+            border: 2px solid #333;
+            padding: 15px;
+            background-color: #d81cde;
+            margin: 20px auto;
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        /* Boxed paragraphs */
+        p {
+            border: 1px solid #777;
+            padding: 20px;
+            background-color: #cabab6;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+        }
+
+        /* Button and form styles */
+        button, .button {
+            background-color: #333;
+            color: black;
+            padding: 30px 60px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        button:hover, .button:hover {
+            background-color: #745;
+        }
+
+        form {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 50px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .error {
+            color: red;
+            display: none;
+        }
+
+        /* Deku-themed Home section */
+        #home {
+            background-color: #e53935; /* Deku's green outfit */
+            color: black;
+        }
+
+        #home button, #home .button {
+            background-color: #90caf9; /* Red accents for Deku's costume */
+        }
+
+        /* Bakugo-themed About section */
+        #about {
+            background-color: #333; /* Orange for Bakugo's explosive personality */
+            color: white;
+        }
+
+        #about button, #about .button {
+            background-color: #424242; /* Black accents for Bakugo */
+        }
+
+        /* Todoroki-themed Contact section */
+        #contact {
+            background-color: #90caf9; /* Light blue for Todoroki's ice power */
+            color: #1a237e; /* Dark blue text */
+        }
+
+        #contact button, #contact .button {
+            background-color: #b71c1c; /* Red accents for Todoroki's fire power */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section --->
+    <section id="home">
+        <h1>Welcome to my Webpage!!!</h1>
+        <p>This is my homepage. I have enjoyed this class a lot. I have always wondered what it would be like to create a website and now I finally have.</p>
+        <img src="" "" alt="My Hero Academia" class="hero-image">
+        <button id="learnMoreBtn">Learn More About Me!</button>
+        <div id="moreInfo" style="display: none;">
+            <p>I have been coding since the age of 15 and have never stopped. I started off with block coding and then I made a game on Roblox that helped me in a technology competition that took me to state. Ever since then, I have continuously improved my coding skills. I am now a junior in college and cannot wait to see what else there is I could learn.</p>
+        </div>
+    </section>
+
+    <!-- About Section --->
+    <section id="about">
+        <h2>About my life.</h2>
+        <p>I was born in Brooklyn, New York, but now I live in Kennesaw with my mom and sister. I'm currently studying Information Technology with a concentration in Cybersecurity at Kennesaw State University. Before attending Kennesaw State, I spent my freshman year at Morehouse College, but I decided to transfer because I didn't enjoy the experience there. Outside of school, I'm really into gaming—right now, I can’t stop playing a new game called Sparking Zero. I also enjoy playing Call of Duty and Fortnite. When I'm not gaming, I love hanging out with friends and traveling with my family.</p>
+        <img src="ua_academy.jpg" alt="UA Academy" class="ua-image">
+    </section>
+
+    <!-- Contact Section --->
+    <section id="contact">
+        <h2>Contact Me!!!</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError">Please enter your name</span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError">Please enter a valid email</span>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="error" id="messageError">Please enter your message</span>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Show "Learn More" info on Home section
+        document.getElementById("learnMoreBtn").addEventListener("click", function() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        });
+
+        // Simple form validation
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            var valid = true;
+
+            // Name validation
+            var name = document.getElementById("name");
+            if (name.value.trim() === "") {
+                document.getElementById("nameError").style.display = "block";
+                valid = false;
+            } else {
+                document.getElementById("nameError").style.display = "none";
+            }
+
+            // Email validation
+            var email = document.getElementById("email");
+            var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.value.match(emailPattern)) {
+                document.getElementById("emailError").style.display = "block";
+                valid = false;
+            } else {
+                document.getElementById("emailError").style.display = "none";
+            }
+
+            // Message validation
+            var message = document.getElementById("message");
+            if (message.value.trim() === "") {
+                document.getElementById("messageError").style.display = "block";
+                valid = false;
+            } else {
+                document.getElementById("messageError").style.display = "none";
+            }
+
+            // Prevent form submission if validation fails
+            if (!valid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
